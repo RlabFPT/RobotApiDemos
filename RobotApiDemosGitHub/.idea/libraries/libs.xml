@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/httpmime-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jmdns.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/robotconnect.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nmdp_speech_kit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mashape-java-client-2.0.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/httpclient-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/org.alicebot.ab.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/httpclient-cache-4.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/httpcore-4.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

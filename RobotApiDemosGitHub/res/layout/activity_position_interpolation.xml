@@ -1,0 +1,398 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/setAngleValueAI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setjointnameAI"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setAngleAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Space:" />
+
+        <EditText
+            android:id="@+id/editSpace"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="number"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setviewPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/setAngleValueAI"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Position6D:" />
+	</LinearLayout>
+	<LinearLayout
+        android:id="@+id/setEditPosX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/setviewPos"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/viewPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="X:" />
+        <EditText
+            android:id="@+id/editX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.2" />
+        <TextView
+            android:id="@+id/viewPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Y:" />
+        <EditText
+            android:id="@+id/editY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="number"
+            android:text="0.05" />
+          
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/setEditPosZ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/setEditPosX"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/viewPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Z:" />
+        <EditText
+            android:id="@+id/editZ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.15" />
+        <TextView
+            android:id="@+id/viewPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Wx:" />
+
+        <EditText
+            android:id="@+id/editWx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" />    
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/setEditPosWY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/setEditPosZ"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/viewPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Wy:" />
+        <EditText
+            android:id="@+id/editWy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" />
+        <TextView
+            android:id="@+id/viewPos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Wz:" />
+        <EditText
+            android:id="@+id/editWz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" />
+        
+    </LinearLayout>
+ 
+	
+    <LinearLayout
+        android:id="@+id/viewAxisMask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/setEditPosWY"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewAxisMask1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="axisMask:" />
+
+        <EditText
+            android:id="@+id/editAxisMask"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="text"
+            android:text="7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/viewAxisMask"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewDuration"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="Duration:" />
+
+        <EditText
+            android:id="@+id/EditDuration"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="number"
+            android:text="2.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/LinearLayout01"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="IsAbsolute:" />
+
+        <EditText
+            android:id="@+id/editIsAbsolute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="7pt"
+            android:inputType="text"
+            android:text="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bottomAI1"
+        android:layout_below="@+id/LinearLayout02"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="pos:" />
+        <TextView
+            android:id="@+id/TextViewX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="0.0" />
+        <TextView
+            android:id="@+id/TextViewY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="0.0" />
+        <TextView
+            android:id="@+id/TextViewZ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="0.0" />
+        <TextView
+            android:id="@+id/TextViewWx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="0.0" />
+        <TextView
+            android:id="@+id/TextViewWy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="0.0" />
+        <TextView
+            android:id="@+id/TextViewWz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="7pt"
+            android:text="0.0" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/bottomAI2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomAI1"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+      	<Button
+            android:id="@+id/btn_stiffnessOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10pt"
+            android:background="@drawable/selectorbutton1"
+            android:text="Stiffness On" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomAI1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_run"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selectorbutton1"
+            android:text="Run"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="10pt"
+            android:background="@drawable/selectorbutton1"
+            android:text="Return" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setjointnameAI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setAngleValueAI"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setnameAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Joint Name:"
+            android:textSize="7pt" />
+
+        <EditText
+            android:id="@+id/editJointName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:text="LArm"
+            android:textSize="7pt" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    
+</RelativeLayout>

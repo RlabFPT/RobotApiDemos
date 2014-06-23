@@ -1,0 +1,250 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout
+        android:id="@+id/setjointnameAI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setnameAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Joint Name:" />
+
+        <EditText
+            android:id="@+id/editJointNameAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:text="HeadYaw" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setAngleValueAI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setjointnameAI"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setAngleAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Angle:" />
+
+        <EditText
+            android:id="@+id/editAngleAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.2" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setDurationValueAI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setAngleValueAI"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewDurationAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Times" />
+
+        <EditText
+            android:id="@+id/editTimeAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="1.0" >
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setIsAbsoluteValueAI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setDurationValueAI"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewIsAbsoluteAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IsAbsolute:" />
+
+        <EditText
+            android:id="@+id/editIsAbsoluteAI"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:text="true" >
+        </EditText>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/setSpeed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setIsAbsoluteValueAI"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewsp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Speed:" />
+
+        <EditText
+            android:id="@+id/editSpeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.5" >
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/tvCAngle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setSpeed"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvAngle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Current Angle:" />
+		<TextView
+            android:id="@+id/tvCurrentAngle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8pt"
+            android:text="0.0" />
+        
+    </LinearLayout>
+  	<LinearLayout
+        android:id="@+id/bottomAI2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomAI1"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+      	<Button
+            android:id="@+id/btn_stiffness"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8pt"
+            android:background="@drawable/selectorbutton1"
+            android:text="Stiffness On" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomAI1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"      
+        android:layout_above="@+id/bottomHand"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_AngleInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:background="@drawable/selectorbutton1"
+            android:text="Angle InterP" />
+
+        <Button
+            android:id="@+id/btn_AngleIntPWSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selectorbutton1"
+            android:text="Angle InterPWSP" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/bottomHand"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomChange"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_OpenHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:background="@drawable/selectorbutton1"
+            android:text="Open Hand" />
+
+        <Button
+            android:id="@+id/btn_CloseHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selectorbutton1"
+            android:text="Close Hand" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/bottomChange"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_changeP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectorbutton1"
+            android:text="Change Angle" />
+
+        <Button
+            android:id="@+id/btn_setP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selectorbutton1"
+            android:text="Set Angle" />
+    </LinearLayout>
+</RelativeLayout>

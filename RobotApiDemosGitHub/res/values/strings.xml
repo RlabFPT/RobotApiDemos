@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Robot Api Demos</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_audio_device">Audio Device</string>
+    <string name="title_activity_audio_player">Audio Player</string>
+    <string name="title_activity_audio_recorder">Audio Recorder</string>
+    <string name="title_activity_text_to_speech">Text To Speech</string>
+    <string name="title_activity_speech_recognition">Speech Recognition</string>
+    <string name="title_activity_behavior_manager">Behavior Manager</string>
+    <string name="title_activity_event_subcriber_unsubscriber">Event Subcriber Unsubscriber</string>
+    <string name="title_activity_file_transfer">File Transfer</string>
+    <string name="title_activity_infra_red">InfraRed</string>
+    <string name="title_activity_leds">Leds</string>
+    <string name="title_activity_motion_actions">Motion Actions</string>
+    <string name="title_activity_motion_stiffness">Motion Stiffness</string>
+    <string name="title_activity_motion_joint">Motion Joint</string>
+    <string name="title_activity_motion_cartesian">Motion Cartesian</string>
+    <string name="title_activity_motion_locomotion">Motion Locomotion</string>
+    <string name="title_activity_motion_general">Motion General</string>
+    <string name="title_activity_motion_others">MotionOthers</string>
+    <string name="title_activity_framework_plugin">FrameworkPlugin</string>
+    <string name="title_activity_sensors">Sensors</string>
+    <string name="title_activity_sensor_sonar">Sensor Sonar</string>
+    <string name="title_activity_sensor_inertial">Sensor Inertial</string>
+    <string name="title_activity_sensor_battery">SensorBattery</string>
+    <string name="title_activity_sensor_fsr">SensorFsr</string>
+    <string name="title_activity_sensor_temperature">Sensor Temperature</string>
+    <string name="title_activity_sensor_joint_position">Sensor Joint Position</string>
+    <string name="title_activity_sensor_electric_current">Sensor Electric Current</string>
+    <string name="title_activity_event_subscriber_unsubscriber">Event Subscriber Unsubscriber</string>
+    <string name="title_activity_tracking">Tracking</string>
+    <string name="title_activity_face_tracking">Face Tracking</string>
+    <string name="title_activity_red_ball_tracking">Red Ball Tracking</string>
+    <string name="title_activity_sound_tracking">Sound Tracking</string>
+    <string name="title_activity_line_tracking">Line Tracking</string>
+    <string name="title_activity_vision_detection">Vision Detection</string>
+    <string name="title_activity_land_mark_detection">LandMark Detection</string>
+    <string name="title_activity_red_ball_detection">RedBall Detection</string>
+    <string name="title_activity_face_detection">Face Detection</string>
+    <string name="title_activity_face_crop_detection">FaceCrop Detection</string>
+    <string name="title_activity_vision_recognition">Vision Recognition</string>
+    <string name="title_activity_flashcard_recognition">Flashcard Recognition</string>
+    <string name="title_activity_line_detection">Line Detection</string>
+    <string name="title_activity_camera_preview">Camera Preview</string>
+
+    <drawable name="color_red">#FE0007</drawable>
+    <drawable name="color_blue">#000FFF</drawable>
+    <drawable name="color_green">#00F600</drawable>
+
+    <string name="title_activity_cartesian_controller">CartesianController</string>
+    <string name="title_activity_joints_angle_controller">JointsAngleController</string>
+    <string name="title_activity_locomotion_controller">LocomotionController</string>
+    <string name="title_activity_gesture_motion">GestureMotion</string>
+    <string name="title_activity_take_picture">TakePicture</string>
+    <string name="title_activity_get_camera_image">Get Camera Image</string>
+    <string name="title_activity_position_interpolations">PositionInterpolations</string>
+    <string name="title_activity_run_behavior">RunBehavior</string>
+    <string name="title_activity_stop_behavior">Stop Behavior</string>
+    <string name="title_activity_stop_all_behaviors">StopAllBehaviors</string>
+    <string name="title_activity_push_file_to_robot">PushFileToRobot</string>
+    <string name="title_activity_pull_file_from_robot">PullFileFromRobot</string>
+    <string name="title_activity_delete_file_in_robot">DeleteFileInRobot</string>
+    <string name="title_activity_create_folder_in_robot">CreateFolderInRobot</string>
+    <string name="title_activity_delete_folder_in_robot">DeleteFolderInRobot</string>
+    <string name="title_activity_remote_control">RemoteControl</string>
+    <string name="title_activity_led_groups">LedGroups</string>
+    <string name="title_activity_led_animations">LedAnimations</string>
+    <string name="title_activity_led_emotions">LedEmotions</string>
+    <string name="title_activity_event_listener">EventListenerActivity</string>
+    <string name="title_activity_camera_preview_fullscreen">CameraPreviewFullscreen</string>
+    <string name="title_activity_cup_tracking">CupTracking</string>
+    <string name="title_activity_robot_protection_test">RobotProtectionTest</string>
+    <string name="title_activity_motion_posture">MotionPosture</string>
+
+</resources>

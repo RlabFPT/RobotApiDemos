@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RedBallTracking" >
+
+    <CheckBox
+        android:id="@+id/cbRedBallTrackingWholeBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Tracking Whole Body" />
+
+    <Button
+        android:id="@+id/btStartRedBallTracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbRedBallTrackingWholeBody"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cbRedBallTrackingWholeBody"
+        android:layout_marginTop="18dp"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/btStopRedBallTracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btStartRedBallTracking"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btStartRedBallTracking"
+        android:layout_marginTop="22dp"
+        android:text="Stop" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btRedBallTrackingGetTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btStopRedBallTracking"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Get Target Position" />
+
+</RelativeLayout>

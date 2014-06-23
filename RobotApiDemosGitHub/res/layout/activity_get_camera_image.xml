@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GetCameraImage" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resolution:     " />
+        
+	         <Spinner
+	          android:id="@+id/spGetCameraImageResolution"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content" />
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color Space:   " />
+        
+	         <Spinner
+	          android:id="@+id/spGetCameraImageColorSpace"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content" />
+        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+			
+            <RadioGroup
+            android:id="@+id/rgGetCameraImageCameraSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+	            <RadioButton
+	                android:id="@+id/rdGetCameraImageCameraTop"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:checked="true"
+	                android:text="Camera Top" />
+	
+	            <RadioButton
+	                android:id="@+id/rdGetCameraImageCameraBottom"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Camera Bottom" />
+
+        	</RadioGroup>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+      
+            <Button
+                android:id="@+id/btGetImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Get Image" />
+      
+        </LinearLayout>        
+        
+       <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+      
+            <ImageView
+           android:id="@+id/ivCameraImage"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:src="@android:drawable/sym_def_app_icon" />
+      
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

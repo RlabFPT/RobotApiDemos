@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FileTransfer" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+        <TextView
+                android:id="@+id/tvLocalFilePath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File path (on Mobile):" />
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+          
+          <EditText
+             android:id="@+id/etLocalFilePath"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="/sdcard/audio.mp3" >
+             <requestFocus />
+          </EditText>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+        <TextView
+                android:id="@+id/tvTargetFilePath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File path (on Robot):" />
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+          
+          <EditText
+             android:id="@+id/etTargetFilePath"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="music/audio.mp3" >
+             <requestFocus />
+          </EditText>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+      
+            <Button
+                android:id="@+id/btPushFile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="pushFile" />
+            
+        </LinearLayout>    
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+      
+            <Button
+                android:id="@+id/btPullFile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="pullFile" />
+      
+        </LinearLayout>    
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+      
+            <Button
+                android:id="@+id/btDeleteFile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="deleteFile" />
+      
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+        <TextView
+                android:id="@+id/tvTargetFolderPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Folder path (on Robot):" />
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+          
+          <EditText
+             android:id="@+id/etTargetFolderPath"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="data/test" >
+             <requestFocus />
+          </EditText>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+      
+            <Button
+                android:id="@+id/btCreateFolder"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="createFolder" />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+      
+            <Button
+                android:id="@+id/btDeleteFolder"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="deleteFolder" />
+      
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

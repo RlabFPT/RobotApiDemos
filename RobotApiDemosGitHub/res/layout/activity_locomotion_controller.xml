@@ -1,0 +1,310 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+    >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MotionLocomotionController" >
+  
+  <LinearLayout 
+  	    android:id="@+id/linearMoveTo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+  	    <TextView
+            android:id="@+id/TVMoveTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8pt"
+            android:text="Move to:" />
+  	    
+  	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/setDis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearMoveTo"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setDistanceX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DistanceX (m):"/>
+
+        <EditText
+            android:id="@+id/editDistanceX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.5" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setDisY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setDis"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/setDistanceY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DistanceY (m):" />
+
+        <EditText
+            android:id="@+id/editDistanceY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setAngleTheta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setDisY"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvTheta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Target Angle (Rad):" />
+
+        <EditText
+            android:id="@+id/editTargetAngle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" >
+
+        </EditText>
+    </LinearLayout>
+  <LinearLayout 
+  	    android:id="@+id/linearSetWalk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setAngleTheta"
+        android:orientation="horizontal" >
+  	    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8pt"
+            android:text="Set Walk:" />
+  	    
+  	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/setStepX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearSetWalk"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Step X:" />
+
+        <EditText
+            android:id="@+id/editStepX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.5" >
+        </EditText>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/setStepY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setStepX"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Step Y:" />
+
+        <EditText
+            android:id="@+id/editStepY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" >
+        </EditText>
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/tvStepTheta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setStepY"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Angle Step:" />
+
+        <EditText
+            android:id="@+id/editStepTheta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" >
+        </EditText>
+    </LinearLayout>
+         <LinearLayout
+        android:id="@+id/tvSpeed"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStepTheta"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Speed:" />
+
+        <EditText
+            android:id="@+id/editSpeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="0.0" >
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/tvCurrentRobotPosition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpeed"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="R.Pos:" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="X:" />
+        <TextView
+            android:id="@+id/tvRPositionX"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.0" />
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Y:" />
+		<TextView
+            android:id="@+id/tvRPositionY"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.0" />
+		<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wz:" />
+		<TextView
+            android:id="@+id/tvRPositionZ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.0" />
+    </LinearLayout> 
+
+     <LinearLayout
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCurrentRobotPosition"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_MoveTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:background="@drawable/selectorbutton1"
+            android:text="Move To:"/>
+
+        <Button
+            android:id="@+id/btn_SetWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selectorbutton1"
+            android:text="Set Walk:" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:orientation="horizontal" >
+		<Button
+            android:id="@+id/btn_standUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="8pt"
+            android:background="@drawable/selectorbutton1"
+            android:text="Stand Up" />
+        <Button
+            android:id="@+id/btn_stopWalk"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:background="@drawable/selectorbutton1"
+            android:text="Stop Walk" />
+    </LinearLayout>
+   
+	</RelativeLayout>
+</ScrollView>

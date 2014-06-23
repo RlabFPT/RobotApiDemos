@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MotionActions" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btMotionStandUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StandUp" />
+
+        <Button
+            android:id="@+id/btMotionSitDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SitDown" />
+
+        <Button
+            android:id="@+id/btMotionCrouch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crouch" />
+
+        <Button
+            android:id="@+id/btMotionStepForWard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step Forward" />
+
+        <Button
+            android:id="@+id/btMotionStepBackWard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step Back Ward" />
+
+        <Button
+            android:id="@+id/btMotionTurnLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TurnLeft" />
+
+        <Button
+            android:id="@+id/btMotionTurnRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TurnRight" />
+
+        <Button
+            android:id="@+id/btMotionStopWalk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Walk" />
+
+    </LinearLayout>
+
+</RelativeLayout>

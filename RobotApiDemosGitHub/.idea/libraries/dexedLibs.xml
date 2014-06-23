@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jmdns-1b3be8405e98c503cc0d86d62cbb3c8d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/org.alicebot.ab-ccb7162823537ec16ccf2521cf384e90.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpcore-4.2.2-274d61623378fb3f18396ff4e0f21563.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpmime-4.2.3-9592237f9c88a37d7accbe5f8a78d49a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpclient-cache-4.2.3-4bafb70f30717639a6615b0bb2bd6766.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-2.2.2-94c5c6f354778236671685e54a933770.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/robotconnect-32dda5d71a0c71118ef4c6bc5fdbf7f8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-2b3a5b2e828baf45e1f36f80e70336d3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/mashape-java-client-2.0.13-941498f4d67ec35f89041358d17f27ea.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/nmdp_speech_kit-2942ace6adf973184363c7e8cf4d4421.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpclient-4.2.3-c9a537a5393ca2083e872e59013bd89a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-62715ab68464df237609ba55406cab6a.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

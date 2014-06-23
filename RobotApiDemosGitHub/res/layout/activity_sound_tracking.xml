@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SoundTracking" >
+
+    <CheckBox
+        android:id="@+id/cbSoundTrackingWholeBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Tracking Whole Body" />
+
+    <Button
+        android:id="@+id/btStartSoundTracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbSoundTrackingWholeBody"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cbSoundTrackingWholeBody"
+        android:layout_marginTop="18dp"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/btStopSoundTracking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btStartSoundTracking"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btStartSoundTracking"
+        android:layout_marginTop="22dp"
+        android:text="Stop" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btSoundTrackingGetTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btStopSoundTracking"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Get Target Position" />
+
+</RelativeLayout>
