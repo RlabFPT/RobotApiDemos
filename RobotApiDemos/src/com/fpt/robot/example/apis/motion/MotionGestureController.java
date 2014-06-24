@@ -40,13 +40,13 @@ import com.fpt.robot.motion.RobotMotionStiffnessController;
 import com.fpt.robot.motion.RobotPosture;
 
 /**
- * MotionGestureController class is used to run some gesture on robot
+ * This class is used to run some gesture on robot
  * 
  * @author Robot Team (FTI)
  */
 public class MotionGestureController extends RobotApiDemoActivity {
 	private static final String TAG = "MotionGestureController";
-	private static final String INSTRUCTIONS = "MotionGestureController class allows you to run some gesture of robot. "
+	private static final String INSTRUCTIONS = "This class is used  to run some gesture of robot. "
 			+ "Click \"Get List\" to get list gesture and list led in robot. Check enable led or not to run led while gesutre is running. "
 			+ "After select gesture name ( and led name), click \"Run\" to run gesture.";
 	// button get gesture list

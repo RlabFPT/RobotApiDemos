@@ -25,13 +25,13 @@ import com.fpt.robot.motion.RobotMotionAction;
 import com.fpt.robot.motion.RobotMotionStiffnessController;
 import com.fpt.robot.motion.RobotPosture;
 /**
- * MotionActions class is used to run some motions of robot
+ * This class is used to run some motions of robot
  * @author Robot Team (FTI)
  */
 public class MotionActions extends RobotApiDemoActivity implements
 		OnClickListener {
 	private static final String TAG = "MotionActions";
-	private static final String INSTRUCTIONS = "MotionActions class allows you to run some actions of robot";
+	private static final String INSTRUCTIONS = "This class is used to run some actions of robot";
 	// Button to stand up
 	private Button btStandUp;
 	// Button to sit down

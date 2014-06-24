@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2014 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -26,11 +26,15 @@ import com.fpt.robot.RobotHardware;
 import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.motion.RobotMotionStiffnessController;
-
+/**
+ * This class is used to set stiffness for some joints and chains of robot.
+ * @author Robot Team (FTI)
+ *
+ */
 public class MotionStiffness extends RobotApiDemoActivity implements
 		OnClickListener {
 	private final String TAG = "MotionStiffness";
-	private final String INSTRUCTIONS = "MotionStiffness class allows you to set stiffness for some joints and chains of robot. " +
+	private final String INSTRUCTIONS = "This class is used to set stiffness for some joints and chains of robot. " +
 			"You also can get stiffness or set stiffness interpolation for joints or chains";
 	// button set stiffness
 	private Button btSetStiffness;

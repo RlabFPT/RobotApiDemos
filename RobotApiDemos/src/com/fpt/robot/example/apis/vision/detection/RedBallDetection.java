@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -24,16 +24,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 /**
- * RedBallDetection class allows you to detecting the red ball
+ * This class is used to detecting the red ball. When robot detect the red ball,
+ * it will return an event, redball detection only stop when stopDetection is
+ * called
+ * 
  * @author Robot Team (FTI)
- *
+ * 
  */
 public class RedBallDetection extends RobotApiDemoActivity implements
 		RobotRedBallDetection.Listener {
 	private static final String TAG = "RedBallDetection";
-	private static final String INSTRUCTIONS = "RedBallDetection class allows you to detecting the red ball. When robot detect the red ball, " +
-			"it will return an event, redball detection only stop when stopDetection is called";
+	private static final String INSTRUCTIONS = "This class is used to detecting the red ball. When robot detect the red ball, "
+			+ "it will return an event, redball detection only stop when stopDetection is called";
 	// Robot red ball monitor to monitor red ball detection
 	private RobotRedBallDetection.Monitor redBallMonitor;
 	// button start red ball detection
@@ -133,13 +137,13 @@ public class RedBallDetection extends RobotApiDemoActivity implements
 	@Override
 	protected void onDestroy() {
 		// stop red ball detection when activity is destroyed
-		try {			
+		try {
 			// stop red ball detection monitor first
 			redBallMonitor.stop();
 			// stop red ball detection
 			RobotRedBallDetection.stopDetection(getRobot());
 			cancelProgress();
-		} catch (RobotException e) {			
+		} catch (RobotException e) {
 			e.printStackTrace();
 		}
 		super.onDestroy();
@@ -151,7 +155,7 @@ public class RedBallDetection extends RobotApiDemoActivity implements
 		getMenuInflater().inflate(R.menu.robot_api_demo_menu, menu);
 		return true;
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -177,10 +181,9 @@ public class RedBallDetection extends RobotApiDemoActivity implements
 		tvResult = (TextView) findViewById(R.id.tvOnRedBallDetected);
 	}
 
-	
 	@Override
 	public void onRedBallDetected(RedBallDetectedInfo info) {
-		runOnUiThread(new Runnable() {			
+		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				tvResult.setText("On red ball detection");

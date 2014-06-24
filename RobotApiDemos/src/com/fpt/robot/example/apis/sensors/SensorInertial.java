@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -29,14 +29,14 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 /**
- * Get inner sensor value
+ * This class is used to get value of inner sensors
  * @author Robot Team (FTI)
  *
  */
 public class SensorInertial extends RobotApiDemoActivity implements
 		RobotSensorListener,OnClickListener {
 	private final String TAG = "SensorInnertial";
-	private final String INSTRUCTIONS = "SensorInnertial class allows you get value of inner sensors";
+	private final String INSTRUCTIONS = "This class is used to get value of inner sensors";
 	// robot sensor monitor to monitoring sensor
 	private RobotSensorMonitor monitor;
 	// names of acceleremoteter sensor

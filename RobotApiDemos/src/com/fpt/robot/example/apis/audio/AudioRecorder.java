@@ -33,13 +33,13 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.filetransfer.RobotFileTransfer;
 
 /**
- * AudioRecorder is class to record from robot
+ * This class is used to record an audio file in robot, and this file will pulled to mobile device
  * 
  * @author Robot Team (FTI)
  */
 public class AudioRecorder extends RobotApiDemoActivity {
 	private static final String TAG = "AudioRecorder";
-	private static final String INSTRUCTIONS = "This class allow you to record an audio file in robot, and this file will pulled to mobile device" +
+	private static final String INSTRUCTIONS = "This class is used to record an audio file in robot, and this file will pulled to mobile device" +
 			"After choose file type, sample rate, channels, the robot audio recorder will be started. Click button \"Stop Record\" to stop record";
 	// Textview display how long have recorded
 	private TextView tvAudioRecordingTimer;

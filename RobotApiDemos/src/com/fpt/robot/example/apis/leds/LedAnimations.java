@@ -26,12 +26,12 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.leds.RobotLedAnimation;
 
 /**
- * LedAnimation class is used to play led animation which is defined on robot
+ * This class is used to run some predefined led animations on robot
  * @author Robot Team (FTI)
  */
 public class LedAnimations extends RobotApiDemoActivity {
 	private static final String TAG = "LedAnimations";
-	private static final String INSTRUCTIONS = "LedAnimations class allows you to run some predefined led animations on robot";
+	private static final String INSTRUCTIONS = "This class is used to run some predefined led animations on robot";
 	// button start led animation
 	private Button btLedAnimationStart;
 	// button stop led animation

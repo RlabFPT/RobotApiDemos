@@ -29,12 +29,12 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 /**
- * Sensor FSR
+ * This class is used to get sensors FSR value of robot.
  * @author Robot Team (FTI)
  */
 public class SensorFsr extends RobotApiDemoActivity implements RobotSensorListener,OnClickListener{
 	private static final String TAG = "SensorFsr";
-	private static final String INSTRUCTIONS = "Sensor FSR";
+	private static final String INSTRUCTIONS = "This class is used to get sensors FSR value of robot.";
 	// list FSR Sensor name
 	private final String[] FSR_SENSOR = new String[] {
 			RobotHardware.Sensor.FSR.LeftFoot.CenterOfPressure.X,

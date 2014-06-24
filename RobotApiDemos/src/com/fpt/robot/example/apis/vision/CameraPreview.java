@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -26,13 +26,13 @@ import com.fpt.robot.vision.RobotCamera;
 import com.fpt.robot.vision.RobotCameraPreview;
 import com.fpt.robot.vision.RobotCameraPreviewView;
 /**
- * CamearaPreview class allows you to preview real time image from robot's camera
+ * This class is used to preview real time image from robot's camera
  * @author Robot Team (FTI)
  *
  */
 public class CameraPreview extends RobotApiDemoActivity implements OnCheckedChangeListener {	
 	private static final String TAG = "CameraPreview";
-	private static final String INSTRUCTIONS = "CamearaPreview class allows you to preview real time image from robot's camera. " +
+	private static final String INSTRUCTIONS = "This class is used to preview real time image from robot's camera. " +
 			"Select which camera do you want to preview (Bottom or Top). Click Start and Stop to preview and stop preview";
 	// button start preview
 	private Button btStartCameraPreview;

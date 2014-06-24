@@ -25,12 +25,12 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.leds.RobotLeds;
 /**
- * LedGroups class is used to start some group led of robot
+ * This class is used to turn on and turn off all single leds 
  * @author Robot Team (FTI)
  */
 public class LedGroups extends RobotApiDemoActivity {
 	private static final String TAG = "LedGroups";
-	private static final String INSTRUCTIONS = "LedGroups class allows you to turn on and turn off all single leds " +
+	private static final String INSTRUCTIONS = "This class is used to turn on and turn off all single leds " +
 			"in a group led. Select group name which you want to turn on or turn off led and then click Led On or Led Off";	
 	// button turn on group led
 	private Button btLedGroupOn;

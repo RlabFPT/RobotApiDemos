@@ -26,7 +26,7 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 
 /**
- * CheckBehavior class is used to check a behavior was installed or wasn't, also
+ * This class is used to check a behavior was installed or wasn't, also
  * check a behavior is running or isn't
  * @author Robot Team (FTI)
  */

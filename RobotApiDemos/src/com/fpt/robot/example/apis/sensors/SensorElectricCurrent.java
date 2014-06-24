@@ -30,14 +30,14 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 /**
- * SensorElectricCurrent class is used to get current value electric of robot
+ * This class is used to get current value electric of robot
  * @author Robot Team (FTI)
  */
 @SuppressLint("DefaultLocale")
 public class SensorElectricCurrent extends RobotApiDemoActivity implements
 		RobotSensorListener, OnClickListener {
 	private static final String TAG = "SensorElectricCurrent";
-	private static final String INSTRUCTIONS = "SensorElectricCurrent class allows you to get current value electric of robot";
+	private static final String INSTRUCTIONS = "This class is used to get current value electric of robot";
 	// Names of electric current sensor
 	private final String[] ELECTRIC_SENSOR = new String[] {
 			RobotHardware.Sensor.ElectricCurrent.BATTERY,

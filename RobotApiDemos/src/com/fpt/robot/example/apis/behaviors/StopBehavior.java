@@ -29,12 +29,12 @@ import com.fpt.robot.behavior.RobotBehavior;
 import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 /**
- * StopBehavior class is used to stop running behavior on robot
+ * This class is used to stop running behavior on robot
  * @author Robot Team (FTI)
  */
 public class StopBehavior extends RobotApiDemoActivity implements OnItemClickListener {
 	private static final String TAG="StopBehavior";
-	private static final String INSTRUCTION = "StopBehavior class allows you to stop running behavior on robot";
+	private static final String INSTRUCTION = "This class is used to stop running behavior on robot";
 	// Button to stop selected behavior
 	private Button btStopSelectedBehavior;
 	// Button to stop all behaviors

@@ -30,12 +30,16 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-
+/**
+ * This class is used to use speech recognition engine of robot
+ * @author Robot Team
+ *
+ */
 public class SpeechRecognition extends RobotApiDemoActivity implements
 		RobotSpeechRecognition.Listener, OnClickListener {
 
 	private final String TAG = "SPeechRecognition";
-	private final String INSTRUCTIONS = "This class allow you to use speech recognition engine of robot. "
+	private final String INSTRUCTIONS = "This class is used to use speech recognition engine of robot. "
 			+ "First, you need choose language and set vocabularies for recognition (Each vocabulary is separated by '\\n') "
 			+ "If you choose enable sound, robot will play \"Beep\" when start recognition. "
 			+ "If you choose enable led, robot will run led while recognition. "

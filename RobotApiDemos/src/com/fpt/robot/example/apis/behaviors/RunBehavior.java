@@ -31,7 +31,7 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 
 /**
- * RunBehavior class is used to run some behavior of robot
+ * This class is used to run predefined behaviors on robot
  * 
  * @author Robot Team (FTI)
  */
@@ -39,7 +39,7 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 public class RunBehavior extends RobotApiDemoActivity implements
 		OnItemClickListener {
 	private static final String TAG = "RunBehavior";
-	private static final String INSTRUCTIONS = "This class allows you to run predefined behaviors on robot. " +
+	private static final String INSTRUCTIONS = "This class is used to run predefined behaviors on robot. " +
 			"Click \"Refresh\" to get list predefined behaviors on robot. Choose one behavior on the list " +
 			"and lick \"Run behavior\" to run it";
 	// Button to run behavior

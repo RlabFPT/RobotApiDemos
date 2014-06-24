@@ -24,12 +24,12 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.leds.RobotLedEmotion;
 /**
- * LedEmotions class is used to run some led emotions of robot
+ * This class is used to play some predefined led emotions.
  * @author Robot Team (FTI)
  */
 public class LedEmotions extends RobotApiDemoActivity {
 	private final static String TAG="LedEmotions";
-	private final static String INSTRUCTIONS = "LedEmotions class allows you to play some predefined led emotions. " +
+	private final static String INSTRUCTIONS = "This class is used to play some predefined led emotions. " +
 			"Select emotion name on spinner and click Start or Stop button";
 	// button start led emotion
 	private Button btLedEmotionStart;

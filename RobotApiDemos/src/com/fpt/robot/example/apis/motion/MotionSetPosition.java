@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2014 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -31,14 +31,14 @@ import com.fpt.robot.motion.RobotMotionSelfCollisionProtection;
 import com.fpt.robot.motion.RobotMotionStiffnessController;
 import com.fpt.robot.types.RobotPosition6D;
 /**
- * MotionSetPosition class allows you to set position of a chain for robot
+ * This class is used to set position of a chain for robot
  * @author Robot Team (FTI)
  *
  */
 public class MotionSetPosition extends RobotApiDemoActivity implements
 		OnClickListener {
 	private final String TAG = "MotionSetPosition";
-	private final String INSTRUCTIONS = "MotionSetPosition class allows you to set position of a chain for robot";
+	private final String INSTRUCTIONS = "This class is used to set position of a chain for robot";
 
 	// button set position
 	private Button btSetPosition;

@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -23,22 +23,24 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.tracking.RobotFaceTracker;
 
 /**
- * FaceTracking class allows you to use face tracking of robot
+ * This class is used to use face tracking of robot. When start face tracking,
+ * robot will follow your face.
+ * 
  * @author Robot Team (FTI)
  */
 public class FaceTracking extends RobotApiDemoActivity {
 	private final static String TAG = "FaceTracking";
-	private final static String INSTRUCTIONS = "FaceTracking class allows you to use face tracking of robot " +
-			"When start face tracking, robot will follow your face. Check Whole Body to enable tracking whole body gesture. " +
-			"Click Start and Stop button to start and stop face tracking";
+	private final static String INSTRUCTIONS = "This class is used to use face tracking of robot "
+			+ "When start face tracking, robot will follow your face. Check Whole Body to enable tracking whole body gesture. "
+			+ "Click Start and Stop button to start and stop face tracking";
 	// check box enable tracking who body
 	private CheckBox cbWholeBody;
 	// button start face tracking
 	private Button btStart;
 	// button stop face tracking
 	private Button btStop;
-	
-//	private Button btGetTarget;
+
+	// private Button btGetTarget;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -61,15 +63,11 @@ public class FaceTracking extends RobotApiDemoActivity {
 				stopFaceTracking();
 			}
 		});
-/*		
-		btGetTarget.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				getTargetPosition();
-			}
-		});
-*/		
+		/*
+		 * btGetTarget.setOnClickListener(new View.OnClickListener() {
+		 * 
+		 * @Override public void onClick(View v) { getTargetPosition(); } });
+		 */
 	}
 
 	/**
@@ -132,31 +130,18 @@ public class FaceTracking extends RobotApiDemoActivity {
 	/**
 	 * Get Target position while tracking
 	 */
-/*	
-	private void getTargetPosition() {
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				boolean newData = false;
-				try {
-					if (RobotFaceTracker.isNewData(getRobot())) {
-						newData = true;
-					}
-					showProgress("Getting target position...");
-					RobotPosition3D target = RobotFaceTracker
-							.getTargetPosition(getRobot());
-					cancelProgress();
-					makeToast("NewData: " + newData + " Target: x,y,z: "
-							+ target.x + ", " + target.y + ", " + target.z);
-				} catch (RobotException e) {
-					cancelProgress();
-					makeToast("Get target postion failed: " + e.getMessage());
-					e.printStackTrace();
-				}
-			}
-		}).start();
-	}
-*/
+	/*
+	 * private void getTargetPosition() { new Thread(new Runnable() {
+	 * 
+	 * @Override public void run() { boolean newData = false; try { if
+	 * (RobotFaceTracker.isNewData(getRobot())) { newData = true; }
+	 * showProgress("Getting target position..."); RobotPosition3D target =
+	 * RobotFaceTracker .getTargetPosition(getRobot()); cancelProgress();
+	 * makeToast("NewData: " + newData + " Target: x,y,z: " + target.x + ", " +
+	 * target.y + ", " + target.z); } catch (RobotException e) {
+	 * cancelProgress(); makeToast("Get target postion failed: " +
+	 * e.getMessage()); e.printStackTrace(); } } }).start(); }
+	 */
 	@Override
 	protected void onDestroy() {
 		try {
@@ -174,7 +159,7 @@ public class FaceTracking extends RobotApiDemoActivity {
 		getMenuInflater().inflate(R.menu.robot_api_demo_menu, menu);
 		return true;
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -198,7 +183,7 @@ public class FaceTracking extends RobotApiDemoActivity {
 		cbWholeBody = (CheckBox) findViewById(R.id.cbFaceTrackingWholeBody);
 		btStart = (Button) findViewById(R.id.btStartFaceTracking);
 		btStop = (Button) findViewById(R.id.btStopFaceTracking);
-//		btGetTarget = (Button) findViewById(R.id.btFaceTrackingGetTarget);
+		// btGetTarget = (Button) findViewById(R.id.btFaceTrackingGetTarget);
 	}
 
 }

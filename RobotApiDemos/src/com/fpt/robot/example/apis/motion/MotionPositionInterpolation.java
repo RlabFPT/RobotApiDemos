@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -32,10 +32,14 @@ import com.fpt.robot.motion.RobotMotionSelfCollisionProtection;
 import com.fpt.robot.motion.RobotMotionStiffnessController;
 import com.fpt.robot.types.RobotPosition6D;
 
-
+/**
+ * This class is used to move an end-effector to the given position and orientation over time
+ * @author Robot Team (FTI)
+ *
+ */
 public class MotionPositionInterpolation extends RobotApiDemoActivity {
 	private final String TAG = "MotionPositionInterpolation";
-	private final String INSTRUCTIONS = "MotionPositionInterpolation class allows you to...";
+	private final String INSTRUCTIONS = "This class is used to move an end-effector to the given position and orientation over time";
 	private Button runBt;
 	private Button returnBt;
 	private Button setStiffnessBt;

@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -31,14 +31,14 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 /**
- * MotionPositionChange class allows you to change position of a chain for robot
+ * This class is used to change position of a chain for robot
  * @author Robot Team (FTI)
  *
  */
 public class MotionPositionChange extends RobotApiDemoActivity implements
 		OnClickListener {
 	private final String TAG = "MotionPositionChange";
-	private final String INSTRUCTIONS = "MotionPositionChange class allows you to change position of a chain for robot";
+	private final String INSTRUCTIONS = "This class is used to change position of a chain for robot";
 
 	// button set position
 	private Button btSetPosition;

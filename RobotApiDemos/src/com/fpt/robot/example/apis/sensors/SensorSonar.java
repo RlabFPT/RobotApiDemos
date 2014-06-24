@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -26,14 +26,14 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 /**
- * SensorSonar class allows you to get sonar value of robot. You can get sonar value on the left or on the right of robot
- * @author QUYET
+ * This class is used to get sonar value of robot. You can get sonar value on the left or on the right of robot
+ * @author Robot Team (FTI)
  *
  */
 public class SensorSonar extends RobotApiDemoActivity implements
 		RobotSonarListener {
 	private final String TAG = "SensorSonar";
-	private final String INSTRUCTIONS = "SensorSonar class allows you to get sonar value of robot. You can get sonar value on the left or on the right of robot";
+	private final String INSTRUCTIONS = "This class is used to get sonar value of robot. You can get sonar value on the left or on the right of robot";
 	// Robot sonar monitor to monitoring sonar robot
 	private RobotSonarMonitor monitor;
 	// button to get value of sonar on the left

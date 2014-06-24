@@ -24,16 +24,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 /**
- * FaceDetection class allows you to detecting the face.
+ * This class is used to detecting the face. When robot detect a face, it will
+ * return an event and face detecting will be auto stop
+ * 
  * @author Robot Team (FTI)
- *
+ * 
  */
-public class FaceDetection extends RobotApiDemoActivity implements RobotFaceDetection.Listener{
+public class FaceDetection extends RobotApiDemoActivity implements
+		RobotFaceDetection.Listener {
 	private static final String TAG = "FaceDetection";
-	private static final String INSTRUCTIONS = "FaceDetection class allows you to detecting the face. When robot detect a face, " +
-			"it will return an event and face detecting will be auto stop";
-	// Face detection monitor to monitoring 
+	private static final String INSTRUCTIONS = "This class is used to detecting the face. When robot detect a face, "
+			+ "it will return an event and face detecting will be auto stop";
+	// Face detection monitor to monitoring
 	private RobotFaceDetection.Monitor faceMonitor;
 	// button start face detection
 	private Button btStart;
@@ -78,7 +82,7 @@ public class FaceDetection extends RobotApiDemoActivity implements RobotFaceDete
 			public void run() {
 				try {
 					// check if face detection is running or not
-					if (RobotFaceDetection.isDetecting(getRobot())){
+					if (RobotFaceDetection.isDetecting(getRobot())) {
 						makeToast("Face Detection is running...");
 						return;
 					}
@@ -92,8 +96,7 @@ public class FaceDetection extends RobotApiDemoActivity implements RobotFaceDete
 					cancelProgress();
 				} catch (RobotException e) {
 					cancelProgress();
-					makeToast("Start Face detection failed: "
-							+ e.getMessage());
+					makeToast("Start Face detection failed: " + e.getMessage());
 					e.printStackTrace();
 				}
 			}
@@ -110,12 +113,12 @@ public class FaceDetection extends RobotApiDemoActivity implements RobotFaceDete
 			public void run() {
 				try {
 					// check if face detection is running or not
-					if (!RobotFaceDetection.isDetecting(getRobot())){
+					if (!RobotFaceDetection.isDetecting(getRobot())) {
 						makeToast("Face Detection is not running");
 						return;
 					}
 					showProgress("Stop Face Detection...");
-					// stop face monitor 
+					// stop face monitor
 					faceMonitor.stop();
 					// stop face detection
 					RobotFaceDetection.stopDetection(getRobot());
@@ -132,22 +135,22 @@ public class FaceDetection extends RobotApiDemoActivity implements RobotFaceDete
 	@Override
 	protected void onDestroy() {
 		// stop face detection when activity is destroyed
-		try {			
+		try {
 			faceMonitor.stop();
 			RobotFaceDetection.stopDetection(getRobot());
-		} catch (RobotException e) {			
+		} catch (RobotException e) {
 			e.printStackTrace();
 		}
 		super.onDestroy();
 	}
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.robot_api_demo_menu, menu);
 		return true;
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -173,10 +176,9 @@ public class FaceDetection extends RobotApiDemoActivity implements RobotFaceDete
 		tvFaceDetect = (TextView) findViewById(R.id.tvFaceDetect);
 	}
 
-
 	@Override
-	public void onFaceDetected(FaceDetectedInfo info) {		
-		runOnUiThread(new Runnable() {		
+	public void onFaceDetected(FaceDetectedInfo info) {
+		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				tvFaceDetect.setText("On Face Detected");
@@ -186,7 +188,7 @@ public class FaceDetection extends RobotApiDemoActivity implements RobotFaceDete
 
 	@Override
 	public void onFaceCropDetected() {
-		runOnUiThread(new Runnable() {		
+		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				tvFaceDetect.setText("On Face Crop Detected");

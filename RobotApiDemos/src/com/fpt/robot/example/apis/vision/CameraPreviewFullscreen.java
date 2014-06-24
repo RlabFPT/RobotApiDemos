@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -20,7 +20,7 @@ import com.fpt.robot.vision.RobotCamera;
 import com.fpt.robot.vision.RobotCameraPreview;
 import com.fpt.robot.vision.RobotCameraPreviewView;
 /**
- *  CamearaPreviewFullscreen class allows you to preview real time image from robot's camera on full screen
+ *  This class is used to preview real time image from robot's camera on full screen
  * @author Robot Team (FTI)
  *
  */

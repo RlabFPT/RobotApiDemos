@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -24,14 +24,14 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.vision.RobotLandmarkDetection;
 import com.fpt.robot.vision.RobotLandmarkDetection.LandmarkDetectedInfo;
 /**
- * LandMarkDetection class allows you to detect robot position with landmark
+ * This class is used to detect robot position with landmark
  * @author Robot Team (FTI)
  *
  */
 public class LandMarkDetection extends RobotApiDemoActivity implements
 		RobotLandmarkDetection.Listener {
 	private static final String TAG = "LandMarkDetection";
-	private static final String INSTRUCTIONS = "LandMarkDetection class allows you to detect robot position with landmark";
+	private static final String INSTRUCTIONS = "This class is used to detect robot position with landmark";
 	// Land mark monitor
 	private RobotLandmarkDetection.Monitor landMarkMonitor;
 	// button start landmark detection

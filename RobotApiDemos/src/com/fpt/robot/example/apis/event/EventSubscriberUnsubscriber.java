@@ -35,7 +35,7 @@ import com.fpt.robot.event.RobotEventSubscriber.OnRobotEventListener;
 import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 /**
- * Class to subscriber and unsubscriber robot event
+ * This class is used to subscribe and unsubscribe robot event
  * @author Robot Team (FTI)
  *
  */

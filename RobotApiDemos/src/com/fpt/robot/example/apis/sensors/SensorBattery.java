@@ -25,13 +25,13 @@ import com.fpt.robot.sensors.RobotBattery.RobotBatteryListener;
 import com.fpt.robot.sensors.RobotBattery.RobotBatteryMonitor;
 
 /**
- * SensorBattery class is used to get value of sensor about battery of robot
+ * This class is used to get value of sensor about battery of robot
  * @author Robot Team (FTI)
  */
 public class SensorBattery extends RobotApiDemoActivity implements
 		RobotBatteryListener {
 	private static final String TAG = "SensorBattery";
-	private static final String INSTRUCTIONS = "SensorBattery class allows you to get value of sensor about battery of robot";
+	private static final String INSTRUCTIONS = "This class is used to get value of sensor about battery of robot";
 	// monitor to monitoring battery sensor
 	private RobotBatteryMonitor monitor;
 	// button to refresh getting value of battery sensor 

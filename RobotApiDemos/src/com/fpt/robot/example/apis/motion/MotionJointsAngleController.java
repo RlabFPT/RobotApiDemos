@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -32,13 +32,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 /**
- * MotionJointAngleController class allows you to change angle of a joint.
+ * This class is used to interpolates one or multiple joints to a target angle or along timed trajectories
  * @author Robot Team (FTI)
  *
  */
 public class MotionJointsAngleController extends RobotApiDemoActivity {
 	private static final String TAG = "MotionJointAngleController";
-	private static final String INSTRUCTIONS = "MotionJointAngleController class allows you to change angle of a joint.";
+	private static final String INSTRUCTIONS = "This class is used to interpolates one or multiple joints to a target angle or along timed trajectories";
 	private Button angleInterP;
 	private Button angleInterPWSP;
 	private Button setStiffnessBt;

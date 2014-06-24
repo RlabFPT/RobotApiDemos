@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -23,7 +23,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 
 /**
- * SoundTracking class allows you to use sound (clap sound) tracking of robot
+ * This class is used to use sound (clap sound) tracking of robot
  * 
  * @author Robot Team (FTI)
  * 
@@ -31,7 +31,7 @@ import android.widget.CheckBox;
 public class SoundTracking extends RobotApiDemoActivity {
 
 	private final static String TAG = "SoundTracking";
-	private final static String INSTRUCTIONS = "SoundTracking class allows you to use sound (clap sound) tracking of robot "
+	private final static String INSTRUCTIONS = "This class is used to use sound (clap sound) tracking of robot "
 			+ "When start sound tracking, robot will tracking sound. Check Whole Body to enable tracking whole body gesture. "
 			+ "Click Start and Stop button to start and stop sound tracking";
 	// check box enable tracking who body

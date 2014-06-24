@@ -25,12 +25,12 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.leds.RobotLeds;
 /**
- * Leds class is used to turn on, turn off leds and run some led animations
+ * This class is used to turn on and turn off single led and run some led animations
  * @author Robot Team (FTI)
  */
 public class Leds extends RobotApiDemoActivity {
 	private static final String TAG = "Leds";
-	private static final String INSTRUCTIONS = "Leds class allows you to turn on and turn off single led. " +
+	private static final String INSTRUCTIONS = "This class is used to turn on and turn off single led. " +
 			"Select led name which you want to turn on or turn off led and then click Led On or Led Off. You can also " +
 			"run some predefined led animations";
 	// button turn on single led

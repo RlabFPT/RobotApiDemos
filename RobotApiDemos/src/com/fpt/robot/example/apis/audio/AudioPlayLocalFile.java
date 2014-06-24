@@ -28,12 +28,12 @@ import com.fpt.robot.audio.RobotAudioPlayer;
 import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 /**
- * Class for play audio file in mobile
+ * This class is used to choose a file from moble device and play it on robot
  * @author Robot Team (FTI)
  */
 public class AudioPlayLocalFile extends RobotApiDemoActivity {
 	private static final String TAG="AudioPlayLocalFile";
-	private static final String INSTRUCTIONS = "This class allow you to choose a file from moble device and play it on robot" +
+	private static final String INSTRUCTIONS = "This class is used to choose a file from moble device and play it on robot" +
 			"Click Button browse file and choose one audio file. Finally, click button play to play audio file on robot";
 	// Editext to display audio file path on the mobile device
 	private EditText etAudioFilePath;
@@ -95,6 +95,7 @@ public class AudioPlayLocalFile extends RobotApiDemoActivity {
 	 */
 	protected void browseFile() {
 		Intent pickAudioIntent = new Intent(Intent.ACTION_GET_CONTENT);
+		// browse file with type is audio
 		pickAudioIntent.setType("audio/*");
 		startActivityForResult(pickAudioIntent, REQUEST_CODE_PICK_AUDIO_FILE);
 	}
@@ -140,8 +141,10 @@ public class AudioPlayLocalFile extends RobotApiDemoActivity {
 	 */
     @Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    	// if result code and request code is OK
 		if (resultCode == RESULT_OK 
 				&& requestCode == REQUEST_CODE_PICK_AUDIO_FILE) {
+			// get path and data of audio file which is choosen
 			String path = data.getDataString();
 			Log.d(TAG, "path=" + path);
 			

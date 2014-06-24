@@ -29,14 +29,14 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.tts.RobotTextToSpeech;
 
 /**
- * TextToSpeech class is used to speak from text on robot
+ * This class is used to enter text and robot will speech that text.
  * @author Robot Team (FTI)
  */
 
 public class TextToSpeech extends RobotApiDemoActivity implements
 		OnClickListener, OnCheckedChangeListener {
 	private static final String TAG = "TextToSpeech";
-	private static final String INSTRUCTIONS = "This class allows you to enter text and robot will speech that text. " +
+	private static final String INSTRUCTIONS = "This class is used to enter text and robot will speech that text. " +
 			"You need choose language for robot speak. With each language, enter correctly text." +
 			"If you check \"Say stoppable\" you can stop robot speaking while robot is speaking, otherwise " +
 			"you cannot stop. After done setting, click \"Say\" button";

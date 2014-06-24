@@ -1,3 +1,13 @@
+/*
+ * Copyright (C) 2014 FPT Corporation
+ * @author: Robot Team (FTI)
+ *  
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.fpt.robot.example.apis.motion;
 
 import android.content.DialogInterface;
@@ -15,14 +25,14 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.motion.RobotPosture;
 
 /**
- * MotionPosture class allows you run some posture of robot.
+ * This class is used to run some posture of robot.
  * @author Robot Team (FTI)
  * 
  */
 public class MotionPosture extends RobotApiDemoActivity {
 
 	private final String TAG = "MotionPosture";
-	private final String INSTRUCTIONS = "MotionPosture class allows you run some posture of robot. Select posutre name " +
+	private final String INSTRUCTIONS = "This class is used to run some posture of robot. Select posutre name " +
 			"on spinner and then click \"Go to posture\" to run this posture";
 	// button go to posture
 	private Button btGoToPosture;

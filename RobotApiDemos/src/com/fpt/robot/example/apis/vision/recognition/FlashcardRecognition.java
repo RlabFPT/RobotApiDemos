@@ -47,7 +47,11 @@ import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.leds.RobotLedAnimation;
 import com.fpt.robot.tts.RobotTextToSpeech;
 import com.fpt.robot.vision.RobotFlashcardRecognition;
-
+/**
+ * 
+ * @author Robot Team (FTI)
+ *
+ */
 @SuppressLint("HandlerLeak") public class FlashcardRecognition extends RobotApiDemoActivity implements 
 	RobotFlashcardRecognition.Listener, OnItemClickListener {
 	private static final String TAG = "FlashcardRecognitionTestActivity";

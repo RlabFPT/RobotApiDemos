@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -31,10 +31,14 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+/**
+ * This class is used to move end-effectors to the given positions and orientations over time
+ * @author Robot Team (FTI)
+ *
+ */
 public class MotionPositionInterpolations extends RobotApiDemoActivity {
 	private final String TAG = "MotionPositionInterpolations";
-	private final String INSTRUCTIONS = "MotionsPositionInterpolations class allows you to ...";
+	private final String INSTRUCTIONS = "This class is used to move end-effectors to the given positions and orientations over time";
 	private Button runBt;
 	private Button returnBt;
 	private Button setStiffnessBt;

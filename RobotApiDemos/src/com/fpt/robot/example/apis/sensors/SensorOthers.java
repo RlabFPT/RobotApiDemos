@@ -1,3 +1,13 @@
+/*
+ * Copyright (C) 2014 FPT Corporation
+ * @author: Robot Team (FTI)
+ *  
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.fpt.robot.example.apis.sensors;
 
 import android.os.Bundle;
@@ -18,14 +28,14 @@ import com.fpt.robot.sensors.RobotSensor;
 import com.fpt.robot.sensors.RobotSensor.RobotSensorListener;
 import com.fpt.robot.sensors.RobotSensor.RobotSensorMonitor;
 /**
- * SensorOther class allows you to get sensor value of a sensor name after get all value sensor from bundle
+ * This class is used to get sensor value of a sensor name after get all value sensor from bundle
  * @author QUYET
  *
  */
 public class SensorOthers extends RobotApiDemoActivity implements
 		RobotSensorListener, OnClickListener {	
 	private final String TAG = "SensorOther";
-	private final String INSTRUCTIONS = "SensorOther class allows you to get sensor value of a sensor name after " +
+	private final String INSTRUCTIONS = "This class is used to get sensor value of a sensor name after " +
 			"get all value sensor from bundle. Select name of sensor value which you want to get value in spinner and " +
 			"click Get Value.";
 	/**

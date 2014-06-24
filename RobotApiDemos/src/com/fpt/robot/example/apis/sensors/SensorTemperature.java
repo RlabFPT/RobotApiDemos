@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -29,14 +29,14 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 /**
- * 
- * @author QUYET
+ * This class is used to get sensor temperature value of robot
+ * @author Robot Team (FTI)
  *
  */
 public class SensorTemperature extends RobotApiDemoActivity implements
 		RobotSensorListener, OnClickListener {
 	private final String TAG = "SensorTemperature";
-	private final String INSTRUCTIONS = "SensorTemperature class allows you to get sensor temperature value of robot";
+	private final String INSTRUCTIONS = "This class is used to get sensor temperature value of robot";
 	// name of temperature sensor
 	private final String[] TEMPERATURE_SENSOR = new String[] {
 			RobotHardware.Sensor.Temperature.BATTERY,

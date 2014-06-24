@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -29,14 +29,14 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 /**
- * SensorJointPosition allows you to get joint position sensor value of robot
+ * This class is used to get joint position sensor value of robot
  * @author Robot Team (FTI)
  *
  */
 public class SensorJointPosition extends RobotApiDemoActivity implements
 		RobotSensorListener, OnClickListener {
 	private final String TAG = "SensorJointPosition";
-	private final String INSTRUCTIONS = "SensorJointPosition allows you to get joint position sensor value of robot";
+	private final String INSTRUCTIONS = "This class is used to get joint position sensor value of robot";
 	// all joint sensor name
 	private final String[] JOINT_SENSOR = new String[] {
 			RobotHardware.Sensor.JointPosition.HEAD_PITCH,

@@ -23,14 +23,15 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 
 /**
- * Play audio file on robot
+ * This class is used to play an audio file on the robot. We have 2 options to
+ * play file: play directory or load file and play later
  * 
  * @author Robot Team (FTI)
  */
 public class AudioPlayRemoteFile extends RobotApiDemoActivity implements
 		OnClickListener {
 	private static final String TAG = "AudioPlayRemoteFile";
-	private static final String INSTRUCTIONS = "This class allow you to play an audio file on the robot"
+	private static final String INSTRUCTIONS = "This class is used to play an audio file on the robot"
 			+ "You can play audio file directly by click \"Play Remote File\", If you want load a file to play it later,"
 			+ "you need to click \"Load File\" button and you can play, pause, stop file. Click \"Beep\" to play default file Beep";
 	// Edittext display audio file path
@@ -84,14 +85,14 @@ public class AudioPlayRemoteFile extends RobotApiDemoActivity implements
 	protected int getLayoutID() {
 		return R.layout.activity_audio_play_remote_file;
 	}
-	
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.robot_api_demo_menu, menu);
 		return true;
 	}
-	
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {

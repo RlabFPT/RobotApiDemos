@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -32,14 +32,14 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.vision.RobotCamera;
 /**
- * TakePicture class allows you to take one or more pictures from robot's camera. 
+ * This class is used to take one or more pictures from robot's camera. 
  * @author Robot Team (FTI)
  *
  */
 public class TakePicture extends RobotApiDemoActivity implements
 		OnCheckedChangeListener {
 	private static final String TAG = "TakePicture";
-	private static final String INSTRUCTIONS = "TakePicture class allows you to take one or more pictures from robot's camera. " +
+	private static final String INSTRUCTIONS = "This class is used to take one or more pictures from robot's camera. " +
 			"Select camera top or camera button from radio group. " +
 			"Select resolution from spinner " +
 			"Select enable action or not while take picture. " +

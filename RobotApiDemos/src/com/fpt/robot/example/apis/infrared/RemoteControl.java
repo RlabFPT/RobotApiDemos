@@ -25,13 +25,13 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 import com.fpt.robot.infrared.RobotInfrared;
 /**
- * RemoteControl which is use IR of robot to control device
+ * This class is used to use IR of robot to control device
  * For example TV Sharp
  * @author Robot Team (FTI)
  */
 public class RemoteControl extends RobotApiDemoActivity implements OnClickListener {
 	private static final String TAG = "RemoteControl";
-	private static final String INSTRUCTIONS = "Remote control class allow you to use IR of Robot " +
+	private static final String INSTRUCTIONS = "This class is used to use IR of Robot " +
 			"to control some devices. This example, we use IR to control TVSharp (code of TVSharp have " +
 			"saved on robot";
 	

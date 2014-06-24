@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (C) 2013 FPT Corporation
  * @author: Robot Team (FTI)
  *  
@@ -26,11 +26,15 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-
+/**
+ * This class is used to use some locomotion of robot. 
+ * @author Robot Team (FTI)
+ *
+ */
 public class MotionLocomotionController extends RobotApiDemoActivity
 		implements OnClickListener {
 	private final String TAG = "MotionLocomotionController";
-	private final String INSTRUCTIONS = "MotionLocomotionController class allows you to use some locomotion of robot. " +
+	private final String INSTRUCTIONS = "This class is used to use some locomotion of robot. " +
 			"Move init fuction will turn robot to initial state to move. " +
 			"If you use \"Move To\" you need set value for x,y,z for robot (it's target for robot move), while robot move to, you can't stop. " +
 			"If you use \"Set walk\" you need set value for x,y,z,speed for robot (it is target and speed for robot walk, while robot walk, you can call \"Stop move\" function to stop walk. " +

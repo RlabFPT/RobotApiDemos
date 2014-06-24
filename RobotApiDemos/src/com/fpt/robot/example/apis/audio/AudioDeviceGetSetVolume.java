@@ -27,7 +27,7 @@ import com.fpt.robot.example.apis.R;
 import com.fpt.robot.example.apis.RobotApiDemoActivity;
 
 /**
- * Class for setting and getting volume in robot
+ * This class allow you to get current robot's volume and it's also allow you to set volume for robot.
  * 
  * @author Robot Team (FTI)
  */
